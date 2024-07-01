@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "616291ea-5eb3-4b7c-9cd8-062251084e05",
+		"name": "BTAppFood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35083070"
+	},
+	"item": [
+		{
+			"name": "lấy like nhà hàng",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/restaurant/get-like-restaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-like-restaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lấy like user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/restaurant/get-like-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-like-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lấy đánh giá user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/restaurant/get-rate-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-rate-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lấy đánh giá nhà hàng",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/restaurant/get-rate-restaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-rate-restaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm đánh giá",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUser\":3,\"idRestaurant\":3,\"amount\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/create-rate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"create-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm đặt hàng",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":3,\"amount\":3,\"code\":\"code\",\"arr_sub_id\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/post-order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"post-order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"user_id\":1,\r\n   \r\n            \"date_like\":\"12/21/2002\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/post-like/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"post-like",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm unlike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"user_id\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/post-unlike/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"post-unlike",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
